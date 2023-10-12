@@ -25,22 +25,22 @@ namespace BusinessLayer.Concrete
 
         public void TAdd(Experience t)
         {
-            throw new NotImplementedException();
+            _experienceDal.Insert(t);   
         }
 
         public void TDelete(Experience t)
         {
-            throw new NotImplementedException();
+            _experienceDal.Delete(t);   
         }
 
         public Experience TGetBtID(int id)
         {
-            throw new NotImplementedException();
+            return _experienceDal.GetById(id);
         }
 
         public void TUpdate(Experience t)
         {
-            throw new NotImplementedException();
+            _experienceDal.Update(t);
         }
     }
 }
