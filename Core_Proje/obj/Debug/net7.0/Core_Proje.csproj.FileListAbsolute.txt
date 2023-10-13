@@ -257,3 +257,7 @@ C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\obj\Debug\net7.0\Core_Proje.MvcApplicationPartsAssemblyInfo.cs

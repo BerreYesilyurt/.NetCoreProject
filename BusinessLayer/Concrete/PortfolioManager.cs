@@ -30,17 +30,17 @@ namespace BusinessLayer.Concrete
 
         public void TDelete(Portfolio t)
         {
-            throw new NotImplementedException();
+            _portfolioDal.Delete(t);    
         }
 
         public Portfolio TGetBtID(int id)
         {
-            throw new NotImplementedException();
+            return _portfolioDal.GetById(id);   
         }
 
         public void TUpdate(Portfolio t)
         {
-            throw new NotImplementedException();
+            _portfolioDal.Update(t);    
         }
     }
 }
