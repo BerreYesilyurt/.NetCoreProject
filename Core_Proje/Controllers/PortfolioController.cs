@@ -12,26 +12,17 @@ namespace Core_Proje.Controllers
         PortfolioManager portfolioManager = new PortfolioManager(new EfPortfolioDal());
         public IActionResult Index()
         {
-            ViewBag.d1 = "Proje Listesi";
-            ViewBag.d2 = "Projeler";
-            ViewBag.d3 = "Proje Listesi";
             var values=portfolioManager.GetList();  
             return View(values);
         }
         [HttpGet]
         public IActionResult AddPortfolio()
         {
-            ViewBag.d1 = "Proje Ekleme";
-            ViewBag.d2 = "Projeler";
-            ViewBag.d3 = "Proje Ekleme";
             return View();
         }
         [HttpPost]
         public IActionResult AddPortfolio(Portfolio portfolio)
         {
-            ViewBag.d1 = "Proje Ekleme";
-            ViewBag.d2 = "Projeler";
-            ViewBag.d3 = "Proje Ekleme";
             PortfolioValidator portfolioValidator=new PortfolioValidator(); 
             ValidationResult results=portfolioValidator.Validate(portfolio);
             if(results.IsValid) {
@@ -60,9 +51,6 @@ namespace Core_Proje.Controllers
         [HttpGet]
         public IActionResult EditPortfolio(int id)
         {
-            ViewBag.d1 = "Proje Güncelleme";
-            ViewBag.d2 = "Projeler";
-            ViewBag.d3 = "Proje Güncelleme";
             var values = portfolioManager.TGetBtID(id);
             return View(values);
 
@@ -71,9 +59,6 @@ namespace Core_Proje.Controllers
         [HttpPost]
         public IActionResult EditPortfolio(Portfolio portfolio)
         {
-            ViewBag.d1 = "Proje Güncelleme";
-            ViewBag.d2 = "Projeler";
-            ViewBag.d3 = "Proje Güncelleme";
             PortfolioValidator validations = new PortfolioValidator();
             ValidationResult results=validations.Validate(portfolio); // portfolio parametresinden gelen değeri, validations nesnesi aracılığıyla validate ediyor.
             if(results.IsValid )

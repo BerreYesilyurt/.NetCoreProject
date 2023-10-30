@@ -20,7 +20,7 @@ namespace BusinessLayer.Concrete
 
         public List<Message> GetList()
         {
-            throw new NotImplementedException();
+            return _messageDal.GetList();
         }
 
         public void TAdd(Message t)
@@ -30,10 +30,15 @@ namespace BusinessLayer.Concrete
 
         public void TDelete(Message t)
         {
-            throw new NotImplementedException();
+            _messageDal.Delete(t);  
         }
 
         public Message TGetBtID(int id)
+        {
+            return _messageDal.GetById(id); 
+        }
+
+        public List<Message> TGetListbyFilter()
         {
             throw new NotImplementedException();
         }

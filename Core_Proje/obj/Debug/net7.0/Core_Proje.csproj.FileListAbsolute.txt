@@ -261,3 +261,9 @@ C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\obj\Debug\net7.0\Core_Proje.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Monster_Pc\source\repos\25 Uygulamalı Proje\Core_Proje\Core_Proje\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

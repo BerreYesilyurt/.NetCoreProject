@@ -11,9 +11,6 @@ namespace Core_Proje.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.d1 = "Hakkımdakiler";
-            ViewBag.d2 = "Hakkımda";
-            ViewBag.d3 = "Hakkımdakiler";
             var values = aboutManager.TGetBtID(1);
             return View(values);
         }

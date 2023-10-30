@@ -1,65 +1,120 @@
 ﻿@model EntityLayer.Concrete.Portfolio
 @{
     ViewData["Title"] = "AddPortfolio";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<div class="card-header border-0">
-    <h3 class="mb-0">Proje Ekleme Sayfası</h3>
-</div>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/favicon.png" />
+</head>
+
+
 
 @using (Html.BeginForm("AddPortfolio", "Portfolio", FormMethod.Post))
 {
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Proje Ekleme Paneli</h4>
 
-    <br />
-    @Html.Label("Proje Başlığı")
-    @Html.TextBoxFor(x=>x.Name,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Name)
-    <br />
-    <label>Görsel URL 1</label>
-    @Html.TextBoxFor(x=>x.ImageUrl,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.ImageUrl)
-    <br />
-    <label>Görsel URL 2</label>
-    @Html.TextBoxFor(x=>x.ImageUrl2,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.ImageUrl2)
-    <br />
-    <label>Proje URL</label>
-    @Html.TextBoxFor(x=>x.ProjectUrl,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.ProjectUrl)
-    <br />
-    <label>Görsel 1</label>
-    @Html.TextBoxFor(x=>x.Image1,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Image1)
-    <br />
-    <label>Görsel 2</label>
-    @Html.TextBoxFor(x=>x.Image2,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Image2)
-    <br />
-    <label>Görsel 3</label>
-    @Html.TextBoxFor(x=>x.Image3,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Image3)
-    <br />
-    <label>Görsel 4</label>
-    @Html.TextBoxFor(x=>x.Image4,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Image4)
-    <br />
-    <label> Platform Adı</label>
-    @Html.TextBoxFor(x=>x.Platform,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Platform)
-    <br />
-    <label>Fiyat</label>
-    @Html.TextBoxFor(x=>x.Price,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Price)
-    <br />
-    <label>Durum</label>
-    @Html.TextBoxFor(x=>x.Status,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Status)
-    <br />
-    <label>Değer</label>
-    @Html.TextBoxFor(x=>x.Value,new {@class="form-control"})
-    @Html.ValidationMessageFor(x=>x.Value)
-    <br />
-    <button class="btn btn-primary">Ekle</button>
+                <form class="forms-sample">
+
+                    <br />
+                    @Html.Label("Proje Başlığı")
+                    @Html.TextBoxFor(x=>x.Name,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Name)
+                    <br />
+                    <label>Görsel URL 1</label>
+                    @Html.TextBoxFor(x=>x.ImageUrl,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.ImageUrl)
+                    <br />
+                    <label>Görsel URL 2</label>
+                    @Html.TextBoxFor(x=>x.ImageUrl2,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.ImageUrl2)
+                    <br />
+                    <label>Proje URL</label>
+                    @Html.TextBoxFor(x=>x.ProjectUrl,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.ProjectUrl)
+                    <br />
+                    <label>Görsel 1</label>
+                    @Html.TextBoxFor(x=>x.Image1,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Image1)
+                    <br />
+                    <label>Görsel 2</label>
+                    @Html.TextBoxFor(x=>x.Image2,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Image2)
+                    <br />
+                    <label>Görsel 3</label>
+                    @Html.TextBoxFor(x=>x.Image3,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Image3)
+                    <br />
+                    <label>Görsel 4</label>
+                    @Html.TextBoxFor(x=>x.Image4,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Image4)
+                    <br />
+                    <label> Platform Adı</label>
+                    @Html.TextBoxFor(x=>x.Platform,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Platform)
+                    <br />
+                    <label>Fiyat</label>
+                    @Html.TextBoxFor(x=>x.Price,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Price)
+                    <br />
+                    <label>Durum</label>
+                    @Html.TextBoxFor(x=>x.Status,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Status)
+                    <br />
+                    <label>Değer</label>
+                    @Html.TextBoxFor(x=>x.Value,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x=>x.Value)
+                    <br />
+                    <button class="btn btn-primary">Ekle</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 
 }
+
+<!-- plugins:js -->
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/chart.js/Chart.min.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/progressbar.js/progressbar.min.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/off-canvas.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/hoverable-collapse.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/misc.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/settings.js"></script>
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/dashboard.js"></script>
+<!-- End custom js for this page -->
