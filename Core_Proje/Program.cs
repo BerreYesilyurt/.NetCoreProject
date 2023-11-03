@@ -31,6 +31,9 @@ app.UseEndpoints(endpoints =>
         pattern: "{area:exists}/{controller=Default}/{action=Index}/{id?}");
 });
 
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/");
+
+
 //app.MapControllerRoute(
 //    name: "default",
 //    pattern: "{controller=Home}/{action=Index}/{id?}");
