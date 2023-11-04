@@ -9,7 +9,7 @@ namespace Core_Proje.ViewComponents.Dashboard
         UserMessageManager messageManager=new UserMessageManager(new EfUserMessageDal());
         public IViewComponentResult Invoke()
         {
-            var values = messageManager.GetUserMessageWithUserService();
+            var values = messageManager.GetUserMessageWithUserService().Take(5).ToList();
 
             return View(values);
         }
