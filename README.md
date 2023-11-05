@@ -6,8 +6,13 @@
 **Bilgisayarınızda istediğiniz herhangi bir editör ve veri tabanı yönetim sisteminin bulunması gerekmektedir. Ben Visual Studio 2022 ve Sql Server 2019'u kullandım.**
 
 ## SİTE VE ÖZELLİKLERİ
-- **Bu proje, bireyin bilgilerini barındıran ve cv formatında da değerlendirelebilecek kişisel bir web sitesidir. ASP.Net Core Identity kütüphanesini kurarken yaşadığım bir sorun nedeniyle projenin register ve login arayüzleri şimdilik bulunmamaktadır.**
+**Bu proje, bireyin bilgilerini barındıran ve cv formatında da değerlendirelebilecek kişisel bir web sitesidir. ASP.Net Core Identity kütüphanesini kurarken yaşadığım bir sorun nedeniyle projenin register ve login arayüzleri şimdilik bulunmamaktadır.**
 
+**Aşağıda ana sayfanın kısa bir videosu yer almaktadır.**
+
+https://github.com/BerreYesilyurt/.NetCoreProject/assets/77548130/687c262b-26de-4c8a-b944-dfd9fe0b9e69
+  
+---------------------------------------
 - **Girişte bizi aşağıdaki sayfa karşılamaktadır. Burada, kişi ile ilgili genel bir bilgi edinilmesi amacı vardır.**
 
 ![Ana Sayfa](https://github.com/BerreYesilyurt/.NetCoreProject/assets/77548130/34244a33-a979-4174-a89d-5221b44240eb)
@@ -37,6 +42,7 @@
 ![Ana Sayfa(İletişim)](https://github.com/BerreYesilyurt/.NetCoreProject/assets/77548130/4a2b6caa-d93b-4689-ad4c-058838776afa)
 
 ![Ana Sayfa(Footer)](https://github.com/BerreYesilyurt/.NetCoreProject/assets/77548130/b720e194-c833-4f13-a235-6de19cfdbb3a)
+
 
 
 
