@@ -1,6 +1,6 @@
 ## .NetCoreProject
 
-**.Net 7.0 ve DBFirst yaklaşımı ile ASP.Net kullanılarak dinamik bir cv sitesi tasarlanmıştır.**
+**.Net 7.0 ve CodeFirst yaklaşımı ile ASP.Net kullanılarak dinamik bir cv sitesi tasarlanmıştır.**
 
 ## KURULUM
 **Bilgisayarınızda istediğiniz herhangi bir editör ve veri tabanı yönetim sisteminin bulunması gerekmektedir. Ben Visual Studio 2022 ve Sql Server 2019'u kullandım.**
